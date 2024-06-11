@@ -65,9 +65,6 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
 
-    -- Treesitter Context
-    use 'nvim-treesitter/nvim-treesitter-context'
-
     -- Auto Pairs
     use 'jiangmiao/auto-pairs'
 end)
