@@ -1,1 +1,1 @@
-# nvim
+# Starchip Configuration
