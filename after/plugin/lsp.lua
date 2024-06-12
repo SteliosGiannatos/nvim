@@ -1,3 +1,4 @@
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('user_lsp_attach', {clear = true}),
   callback = function(event)
@@ -12,10 +13,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>vca', function() vim.lsp.buf.code_action() end, opts)
     vim.keymap.set('n', '<leader>vrr', function() vim.lsp.buf.references() end, opts)
     vim.keymap.set('n', '<leader>vrn', function() vim.lsp.buf.rename() end, opts)
-    vim.keymap.set('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set('i', '<C-s>', function() vim.lsp.buf.signature_help() end, opts)
   end,
 })
-
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require('mason').setup({})

@@ -67,4 +67,7 @@ return require('packer').startup(function(use)
 
     -- Auto Pairs
     use 'jiangmiao/auto-pairs'
+
+    -- Auto Read
+    use 'djoshea/vim-autoread'
 end)

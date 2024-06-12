@@ -29,12 +29,13 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n","<leader>gs", vim.cmd.Git);
 
 vim.keymap.set(
     "n",
     "<leader>ee",
-    "otry:<CR>except Exception as e:<CR>logger.error(f\"Error: {e}\")<Esc>O"
+    "otry:<CR>except Exception as e:<CR>    logger.error(f\"Error: {e}\")<Esc>O"
 )
 
 vim.keymap.set("n", "<leader><leader>", function()
@@ -42,3 +43,6 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<leader>r", ":w<CR>:!python %<CR>", { noremap = true,silent = true})
+
+
+

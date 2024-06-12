@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/stelios/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
+  ["vim-autoread"] = {
+    loaded = true,
+    path = "/home/stelios/.local/share/nvim/site/pack/packer/start/vim-autoread",
+    url = "https://github.com/djoshea/vim-autoread"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/stelios/.local/share/nvim/site/pack/packer/start/vim-fugitive",
